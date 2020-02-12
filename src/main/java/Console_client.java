@@ -22,6 +22,7 @@ public class Console_client {
             sendAndListen(message);
 
         }
+        context.destroySocket(socket);
 
 
 
