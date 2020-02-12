@@ -34,6 +34,9 @@ public class Console_client {
 
     private static void sendAndListen(String message) {
         ZFrame frame = new ZFrame(message);
+        frame.send(socket, 0);
+
         
+
     }
 }
