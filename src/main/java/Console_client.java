@@ -2,6 +2,8 @@ import org.zeromq.SocketType;
 import org.zeromq.ZContext;
 import org.zeromq.ZMQ;
 
+import java.util.Scanner;
+
 public class Console_client {
 
     private static ZMQ.Socket socket;
@@ -10,6 +12,8 @@ public class Console_client {
         socket = context.createSocket(SocketType.REQ);
         socket.connect("tcp://localhost:3585");
         System.out.println("Client start on tcp://localhost:3585");
+        Scanner in = new Scanner(System.in);
+
         
 
 
