@@ -16,7 +16,8 @@ public class Console_client {
 
         while (true) {
             String message = in.nextLine();
-            
+            if (message.equals(
+
         }
 
 
