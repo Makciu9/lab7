@@ -19,6 +19,7 @@ public class Console_client {
             if (message.equals("STOP")){
                 break;
             }
+            sendAndListen(message);
 
         }
 
@@ -26,5 +27,8 @@ public class Console_client {
 
 
 
+    }
+
+    private static void sendAndListen(String message) {
     }
 }
