@@ -35,6 +35,6 @@ public class Console_client {
 
         ZMsg recv = ZMsg.recvMsg(socket);
         String response = new String(recv.getFirst().getData(), ZMQ.CHARSET);
-
+        System.out.println(response);
     }
 }
