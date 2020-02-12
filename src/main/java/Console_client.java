@@ -8,7 +8,8 @@ public class Console_client {
     public static void main(String[] args) {
         ZContext context = new ZContext();
         socket = context.createSocket(SocketType.REQ);
-        socket.connect(
+        socket.connect("tcp://localhost:3585");
+        
 
 
     }
