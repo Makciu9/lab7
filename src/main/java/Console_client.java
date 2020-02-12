@@ -1,7 +1,4 @@
-import org.zeromq.SocketType;
-import org.zeromq.ZContext;
-import org.zeromq.ZFrame;
-import org.zeromq.ZMQ;
+import org.zeromq.*;
 
 import java.util.Scanner;
 
@@ -36,7 +33,7 @@ public class Console_client {
         ZFrame frame = new ZFrame(message);
         frame.send(socket, 0);
 
-        
+        ZMsg recv = ZMsg.recvMsg(socket);
 
     }
 }
