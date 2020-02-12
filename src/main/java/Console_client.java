@@ -15,6 +15,7 @@ public class Console_client {
         Scanner in = new Scanner(System.in);
 
         while (true) {
+            String message = in.nextLine();
             
         }
 
