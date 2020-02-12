@@ -10,7 +10,8 @@ public class Proxy {
     public static void main(String[] args) {
         context = new ZContext();
         socketClient = context.createSocket(SocketType.ROUTER);
-        
+        socketClient.bind(
+
     }
 
 
