@@ -13,7 +13,8 @@ public class Proxy {
         socketClient.bind("tcp://localhost:3585");
 
         socketCache = context.createSocket(SocketType.ROUTER);
-        
+        socketCache.bind("tcp://localhost:3586");
+
 
 
     }
