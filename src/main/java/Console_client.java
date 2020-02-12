@@ -23,6 +23,7 @@ public class Console_client {
 
         }
         context.destroySocket(socket);
+        context.destroy();
 
 
 
@@ -31,5 +32,6 @@ public class Console_client {
     }
 
     private static void sendAndListen(String message) {
+        
     }
 }
