@@ -14,7 +14,11 @@ public class Console_client {
         System.out.println("Client start on tcp://localhost:3585");
         Scanner in = new Scanner(System.in);
 
-        
+        while (true) {
+            
+        }
+
+
 
 
 
