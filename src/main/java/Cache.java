@@ -5,4 +5,7 @@ public class Cache {
     private String id;
     private long timeout;
     private int start;
+    private int end;
+
+    
 }
