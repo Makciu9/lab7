@@ -23,7 +23,9 @@ public class Proxy {
 
         //caches = new ArrayList<>();
         while (poller.poll(4000) != -1) {
-            if 
+            if (poller.pollin(0)){
+                
+            }
         }
 
 
