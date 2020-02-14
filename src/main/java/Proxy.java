@@ -21,6 +21,8 @@ public class Proxy {
         poller.register(socketClient, ZMQ.Poller.POLLIN);
         poller.register(socketStorage, ZMQ.Poller.POLLIN);
 
+        caches = new ArrayList<>();
+
 
 
     }
