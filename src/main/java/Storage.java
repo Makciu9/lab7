@@ -10,6 +10,7 @@ public class Storage {
         context = new ZContext();
         ZMQ.Socket socket = context.createSocket(SocketType.DEALER);
         Scanner in = new Scanner(System.in);
+        int start = in.nextInt();
 
 
 
