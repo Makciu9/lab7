@@ -1,6 +1,7 @@
 import org.zeromq.SocketType;
 import org.zeromq.ZContext;
 import org.zeromq.ZMQ;
+import org.zeromq.ZMsg;
 
 public class Proxy {
     private static ZMQ.Socket socketClient;
@@ -24,7 +25,8 @@ public class Proxy {
         //caches = new ArrayList<>();
         while (poller.poll(4000) != -1) {
             if (poller.pollin(0)){
-                
+                ZMsg recv = ZMsg.recvMsg(socketClient);
+
             }
         }
 
