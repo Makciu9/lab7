@@ -7,6 +7,7 @@ import java.util.Scanner;
 
 public class Storage {
     private static ZContext context;
+    private static ZMQ.Poller poller;
     public static void main(String[] args) {
         context = new ZContext();
         ZMQ.Socket socket = context.createSocket(SocketType.DEALER);
