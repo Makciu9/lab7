@@ -4,7 +4,7 @@ import org.zeromq.ZMQ;
 
 public class Proxy {
     private static ZMQ.Socket socketClient;
-    private static ZMQ.Socket socketCache;
+    private static ZMQ.Socket socketStorage;
     private static ZContext context;
     private static ZMQ.Poller poller;
 
@@ -13,12 +13,13 @@ public class Proxy {
         socketClient = context.createSocket(SocketType.ROUTER);
         socketClient.bind("tcp://localhost:3585");
 
-        socketCache = context.createSocket(SocketType.ROUTER);
-        socketCache.bind("tcp://localhost:3586");
+        socketStorage = context.createSocket(SocketType.ROUTER);
+        socketStorage.bind("tcp://localhost:3586");
         System.out.println("Proxy start");
 
         poller = context.createPoller(2);
         poller.register(socketClient, ZMQ.Poller.POLLIN);
+        poller.register(socketStorage, ZMQ.Poller.POLLIN);
 
 
 
