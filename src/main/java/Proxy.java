@@ -27,6 +27,7 @@ public class Proxy {
             if (poller.pollin(0)){
                 ZMsg recv = ZMsg.recvMsg(socketClient);
                 String message = new String(recv.getLast().getData(), ZMQ.CHARSET);
+                String[] messageSplit = message.split(" ");
 
             }
         }
