@@ -1,3 +1,6 @@
+import org.zeromq.ZFrame;
+
 public class Cache {
     private ZFrame frame;
+    private String id;
 }
