@@ -6,6 +6,7 @@ public class Proxy {
     private static ZMQ.Socket socketClient;
     private static ZMQ.Socket socketCache;
     private static ZContext context;
+    private static ZMQ.Poller poller;
 
     public static void main(String[] args) {
         context = new ZContext();
