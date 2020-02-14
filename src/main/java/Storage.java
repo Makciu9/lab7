@@ -14,7 +14,7 @@ public class Storage {
         int start = in.nextInt();
         int end = in.nextInt();
 
-        ZFrame initFrame = new ZFrame("INIT"
+        ZFrame initFrame = new ZFrame("INIT" + " " + start + " " + end);
 
 
 
