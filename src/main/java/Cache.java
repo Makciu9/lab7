@@ -11,6 +11,7 @@ public class Cache {
         this.frame = frame;
         this.id = id;
         this.timeout = timeout;
+        this.start = start;
 
     }
 }
