@@ -15,6 +15,7 @@ public class Storage {
         int end = in.nextInt();
 
         ZFrame initFrame = new ZFrame("INIT" + " " + start + " " + end);
+        initFrame.send(socket, 0);
 
 
 
