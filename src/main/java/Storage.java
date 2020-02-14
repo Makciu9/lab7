@@ -16,6 +16,7 @@ public class Storage {
 
         ZFrame initFrame = new ZFrame("INIT" + " " + start + " " + end);
         initFrame.send(socket, 0);
+        System.out.println("Storage start on tcp://localhost:3586");
 
 
 
