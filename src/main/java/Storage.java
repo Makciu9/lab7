@@ -18,6 +18,8 @@ public class Storage {
         initFrame.send(socket, 0);
         System.out.println("Storage start on tcp://localhost:3586");
 
+        poller = context.createPoller(1);
+
 
 
 
