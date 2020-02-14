@@ -18,6 +18,7 @@ public class Proxy {
         System.out.println("Proxy start");
 
         poller = context.createPoller(2);
+        poller.register(socketClient, ZMQ.Poller.POLLIN);
 
 
 
