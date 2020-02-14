@@ -12,6 +12,7 @@ public class Cache {
         this.id = id;
         this.timeout = timeout;
         this.start = start;
+        this.end = end;
 
     }
 }
