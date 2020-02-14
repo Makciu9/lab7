@@ -16,6 +16,8 @@ public class Proxy {
         socketCache.bind("tcp://localhost:3586");
         System.out.println("Proxy start");
 
+        poller = context.createPoller(2);
+
 
 
     }
