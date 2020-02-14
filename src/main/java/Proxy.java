@@ -30,7 +30,7 @@ public class Proxy {
                 String[] messageSplit = message.split(" ");
                 String command = messageSplit[0];
 
-                
+
 
             }
         }
