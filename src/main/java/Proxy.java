@@ -45,7 +45,9 @@ public class Proxy {
                 String[] messageSplit = message.split(" ");
                 String command = messageSplit[0];
 
-                if (command.equals("INIT")
+                if (command.equals("INIT")) {
+                    
+                }
 
 
 
