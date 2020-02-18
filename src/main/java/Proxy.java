@@ -75,6 +75,7 @@ public class Proxy {
         }
         ZMsg response = new ZMsg();
         response.add(new ZFrame("put to " + count));
+        response.wrap(recv.getFirst());
 
     }
 
