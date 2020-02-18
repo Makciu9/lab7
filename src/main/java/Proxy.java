@@ -73,6 +73,7 @@ public class Proxy {
                 count++;
             }
         }
+        ZMsg response = new ZMsg();
         
     }
 
