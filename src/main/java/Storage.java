@@ -58,6 +58,7 @@ public class Storage {
     }
 
     private static void sendPUT(int key, String val, ZMsg recv) {
+        storage.put(key, val);
         
     }
 
