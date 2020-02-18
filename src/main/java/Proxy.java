@@ -44,6 +44,7 @@ public class Proxy {
 
     }
     private static void sendGET(int key, ZMsg recv) {
+        boolean flag = false;
         
     }
 
