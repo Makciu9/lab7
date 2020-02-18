@@ -43,6 +43,9 @@ public class Proxy {
 
 
     }
+    private static void sendGET(int key, ZMsg recv) {
+        
+    }
 
 
 }
