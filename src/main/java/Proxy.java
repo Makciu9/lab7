@@ -66,7 +66,9 @@ public class Proxy {
 
     private static void sendPUT(int key, ZMsg recv) {
         int count = 0;
-        
+        for (Cache cache : caches) {
+            
+        }
     }
 
 
