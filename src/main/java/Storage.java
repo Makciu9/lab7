@@ -1,5 +1,6 @@
 import org.zeromq.*;
 
+import java.util.Map;
 import java.util.Scanner;
 
 public class Storage {
@@ -44,7 +45,7 @@ public class Storage {
 
         }
         context.destroySocket(socket);
-
+        context.destroy();
 
 
 
