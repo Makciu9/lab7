@@ -49,7 +49,7 @@ public class Proxy {
                     int start = Integer.parseInt(messageSplit[1]);
                     int end = Integer.parseInt(messageSplit[2]);
                     caches.add(new Cache(frame, id, System.currentTimeMillis(), start, end));
-                }
+                }else if (command.equals(
 
 
 
