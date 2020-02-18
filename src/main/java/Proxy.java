@@ -30,7 +30,9 @@ public class Proxy {
                 String[] messageSplit = message.split(" ");
                 String command = messageSplit[0];
                 System.out.println(messageSplit[0] + " " + messageSplit[1]);
-                
+                if (command.equals("GET")){
+                    
+                }
 
 
 
