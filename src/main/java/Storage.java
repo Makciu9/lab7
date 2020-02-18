@@ -37,7 +37,7 @@ public class Storage {
         if (System.currentTimeMillis() >= timeout){
             System.out.println("TIMEOUT");
             timeout = System.currentTimeMillis() + 3000;
-            ZFrame frame = new ZFrame(
+            ZFrame frame = new ZFrame("TIMEOUT");
 
         }
 
