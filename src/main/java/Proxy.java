@@ -3,11 +3,14 @@ import org.zeromq.ZContext;
 import org.zeromq.ZMQ;
 import org.zeromq.ZMsg;
 
+import java.util.ArrayList;
+
 public class Proxy {
     private static ZMQ.Socket socketClient;
     private static ZMQ.Socket socketStorage;
     private static ZContext context;
     private static ZMQ.Poller poller;
+    private static ArrayList<Cache> caches;
 
     public static void main(String[] args) {
         context = new ZContext();
