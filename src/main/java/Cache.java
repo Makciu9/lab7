@@ -15,4 +15,7 @@ public class Cache {
         this.end = end;
 
     }
+
+    public boolean getStart() {
+    }
 }
