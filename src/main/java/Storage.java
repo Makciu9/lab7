@@ -25,6 +25,9 @@ public class Storage {
             isTimeout(socket);
             if (poller.pollin(0)){
                 ZMsg recv = ZMsg.recvMsg(socket);
+                if (recv.size() == 3) {
+                    
+                }
 
             }
 
