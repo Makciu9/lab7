@@ -68,6 +68,7 @@ public class Proxy {
         int count = 0;
         for (Cache cache : caches) {
             if (cache.getStart() <= key && cache.getEnd() >= key){
+                cache.getFrame().send(socketStorage, ZFrame.REUSE + ZFrame.MORE);
                 
             }
         }
