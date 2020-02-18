@@ -55,7 +55,7 @@ public class Proxy {
             }
             System.out.println("Proxy loop...");
         }
-
+        context.destroySocket(socketClient);
 
 
     }
