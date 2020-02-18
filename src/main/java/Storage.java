@@ -34,12 +34,14 @@ public class Storage {
 
     }
     private static void isTimeout(ZMQ.Socket socket) {
-        if (System.currentTimeMillis() >= timeout){
+        if (System.currentTimeMillis() >= timeout) {
             System.out.println("TIMEOUT");
             timeout = System.currentTimeMillis() + 3000;
             ZFrame frame = new ZFrame("TIMEOUT");
+            frame.send(socket, 0);
+        }
 
         }
 
-    }
 }
+
