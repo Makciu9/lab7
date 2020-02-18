@@ -16,6 +16,7 @@ public class Cache {
 
     }
 
-    public boolean getStart() {
+    public int getStart() {
+        
     }
 }
