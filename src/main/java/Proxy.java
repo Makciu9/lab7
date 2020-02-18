@@ -29,6 +29,7 @@ public class Proxy {
                 String message = new String(recv.getLast().getData(), ZMQ.CHARSET);
                 String[] messageSplit = message.split(" ");
                 String command = messageSplit[0];
+                System.out.println(messageSplit[0] + " " + messageSplit[1]);
                 
 
 
