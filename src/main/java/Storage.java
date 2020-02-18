@@ -26,6 +26,7 @@ public class Storage {
             if (poller.pollin(0)){
                 ZMsg recv = ZMsg.recvMsg(socket);
                 if (recv.size() == 3) {
+                    String[] message = recv.getLast().toString().split(" ");
                     
                 }
 
