@@ -27,7 +27,7 @@ public class Storage {
                 ZMsg recv = ZMsg.recvMsg(socket);
                 if (recv.size() == 3) {
                     String[] message = recv.getLast().toString().split(" ");
-                    
+                    String command = message[0];
                 }
 
             }
