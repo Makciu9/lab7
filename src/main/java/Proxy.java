@@ -34,7 +34,8 @@ public class Proxy {
                     int key = Integer.parseInt(messageSplit[1]);
                     sendGET(key, recv);
                 } else if (command.equals("PUT")){
-                    
+                    int key = Integer.parseInt(messageSplit[1]);
+
                 }
 
 
