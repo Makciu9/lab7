@@ -33,7 +33,8 @@ public class Storage {
                         int key = Integer.parseInt(message[1]);
                         sendGET(key, recv, socket);
                     } else if (command.equals("PUT")){
-                        
+                        int key = Integer.parseInt(message[1]);
+
                     }
                 }
 
