@@ -35,6 +35,7 @@ public class Storage {
                     } else if (command.equals("PUT")){
                         int key = Integer.parseInt(message[1]);
                         String val = message[2];
+                        sendPUT(key, val, recv);
 
                     }
                 }
