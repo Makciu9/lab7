@@ -1,7 +1,4 @@
-import org.zeromq.SocketType;
-import org.zeromq.ZContext;
-import org.zeromq.ZMQ;
-import org.zeromq.ZMsg;
+import org.zeromq.*;
 
 import java.util.ArrayList;
 
@@ -50,7 +47,8 @@ public class Proxy {
         boolean flag = false;
         for (Cache cache : caches) {
             if (cache.getStart()  <= key && cache.getEnd() >= key){
-                
+                cache.getFrame().send(socketStorage, ZFrame.REUSE + ZFrame.MORE);
+
             }
 
         }
