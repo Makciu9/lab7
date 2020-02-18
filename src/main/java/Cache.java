@@ -34,5 +34,6 @@ public class Cache {
     }
 
     public void setTimeout(long currentTimeMillis) {
+        this.timeout = currentTimeMillis;
     }
 }
