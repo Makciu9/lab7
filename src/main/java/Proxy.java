@@ -40,6 +40,7 @@ public class Proxy {
             } else if (poller.pollin(1)){
                 ZMsg recv = ZMsg.recvMsg(socketStorage);
                 ZFrame frame = recv.unwrap();
+                String id = new String(frame.getData(), ZMQ.CHARSET);
 
             }
         }
