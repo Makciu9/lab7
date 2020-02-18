@@ -38,6 +38,7 @@ public class Proxy {
                     sendPUT(key, recv);
                 }
             } else if (poller.pollin(1)){
+                ZMsg recv = ZMsg.recvMsg(socketStorage);
                 
             }
         }
