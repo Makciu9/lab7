@@ -56,7 +56,7 @@ public class Proxy {
             System.out.println("Proxy loop...");
         }
         context.destroySocket(socketClient);
-
+        context.destroySocket(socketStorage);
 
     }
     private static void sendGET(int key, ZMsg recv) {
