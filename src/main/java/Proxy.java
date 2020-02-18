@@ -47,7 +47,8 @@ public class Proxy {
 
                 if (command.equals("INIT")) {
                     int start = Integer.parseInt(messageSplit[1]);
-                    
+                    int end = Integer.parseInt(messageSplit[2]);
+
                 }
 
 
