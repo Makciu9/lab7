@@ -96,6 +96,7 @@ public class Proxy {
     private static void changeTimeout(String id) {
         for (Cache cache : caches) {
             if (cache.checkID(id)) {
+                cache.setTimeout(System.currentTimeMillis());
 
             }
         }

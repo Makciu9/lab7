@@ -32,4 +32,7 @@ public class Cache {
     public boolean checkID(String id) {
         return this.id.equals(id);
     }
+
+    public void setTimeout(long currentTimeMillis) {
+    }
 }
