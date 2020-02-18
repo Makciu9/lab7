@@ -59,7 +59,7 @@ public class Storage {
 
     private static void sendPUT(int key, String val, ZMsg recv) {
         storage.put(key, val);
-        
+        recv.destroy();
     }
 
     private static void isTimeout(ZMQ.Socket socket) {
