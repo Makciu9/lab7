@@ -50,7 +50,7 @@ public class Storage {
         String response = storage.getOrDefault(key, "ex");
         recv.getLast().reset(response);
         recv.send(socket);
-
+        System.out.println("GET | key: " + key);
     }
 
     private static void isTimeout(ZMQ.Socket socket) {
