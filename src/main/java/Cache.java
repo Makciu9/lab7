@@ -17,6 +17,7 @@ public class Cache {
     }
 
     public int getStart() {
-        
+        return start;
+
     }
 }
