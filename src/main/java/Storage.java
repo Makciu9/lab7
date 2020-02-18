@@ -6,6 +6,7 @@ public class Storage {
     private static ZContext context;
     private static ZMQ.Poller poller;
     private static long timeout;
+    private static Map<Integer, String> storage;
     public static void main(String[] args) {
         context = new ZContext();
         ZMQ.Socket socket = context.createSocket(SocketType.DEALER);
