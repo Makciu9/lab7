@@ -24,9 +24,6 @@ public class Console_client {
         context.destroy();
 
 
-
-
-
     }
 
     private static void sendAndListen(String message) {
