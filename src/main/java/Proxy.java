@@ -37,7 +37,9 @@ public class Proxy {
                     int key = Integer.parseInt(messageSplit[1]);
                     sendPUT(key, recv);
                 }
-            } else if 
+            } else if (poller.pollin(1)){
+                
+            }
         }
 
 
