@@ -57,6 +57,10 @@ public class Storage {
         System.out.println("GET | key: " + key);
     }
 
+    private static void sendPUT(int key, String val, ZMsg recv) {
+        
+    }
+
     private static void isTimeout(ZMQ.Socket socket) {
         if (System.currentTimeMillis() >= timeout) {
             System.out.println("TIMEOUT");
