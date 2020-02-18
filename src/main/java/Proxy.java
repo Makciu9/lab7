@@ -57,7 +57,7 @@ public class Proxy {
         }
         context.destroySocket(socketClient);
         context.destroySocket(socketStorage);
-
+        context.destroy();
     }
     private static void sendGET(int key, ZMsg recv) {
         boolean flag = false;
