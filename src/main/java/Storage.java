@@ -25,8 +25,9 @@ public class Storage {
 
         timeout = System.currentTimeMillis() + 3000;
         while (poller.poll(3000) != -1){
+            isTimeout(socket);
             if (poller.pollin(0)){
-                
+
             }
 
         }
