@@ -56,6 +56,7 @@ public class Proxy {
         }
         if (!flag) {
             recv.getLast().reset("er");
+            recv.send(socketClient);
 
         }
     }
