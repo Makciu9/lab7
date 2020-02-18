@@ -94,7 +94,9 @@ public class Proxy {
         response.send(socketClient);
     }
     private static void changeTimeout(String id) {
-        
+        for (Cache cache : caches) {
+            
+        }
     }
 
 
