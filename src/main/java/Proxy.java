@@ -52,10 +52,8 @@ public class Proxy {
                 }else if (command.equals("TIMEOUT")){
                     changeTimeout(id);
                 } else {recv.send(socketClient);}
-
-
-
             }
+            System.out.println("Proxy loop...");
         }
 
 
