@@ -47,7 +47,7 @@ public class Storage {
     }
 
     private static void sendGET(int key, ZMsg recv, ZMQ.Socket socket) {
-        String response = storage.getOrDefault(key
+        String response = storage.getOrDefault(key, 
     }
 
     private static void isTimeout(ZMQ.Socket socket) {
