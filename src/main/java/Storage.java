@@ -30,6 +30,7 @@ public class Storage {
                     String command = message[0];
                     if (command.equals("GET")){
                         int key = Integer.parseInt(message[1]);
+                        sendGET(key, recv, socket);
 
                     }
                 }
@@ -43,6 +44,10 @@ public class Storage {
 
 
     }
+
+    private static void sendGET(int key, ZMsg recv, ZMQ.Socket socket) {
+    }
+
     private static void isTimeout(ZMQ.Socket socket) {
         if (System.currentTimeMillis() >= timeout) {
             System.out.println("TIMEOUT");
