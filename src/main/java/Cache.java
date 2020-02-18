@@ -30,5 +30,6 @@ public class Cache {
     }
 
     public boolean checkID(String id) {
+        return this.id.equals(id);
     }
 }
