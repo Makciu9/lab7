@@ -26,5 +26,6 @@ public class Cache {
     }
 
     public ZFrame getFrame() {
+        return frame;
     }
 }
