@@ -24,7 +24,9 @@ public class Storage {
         poller.register(socket, ZMQ.Poller.POLLIN);
 
         timeout = System.currentTimeMillis() + 3000;
-        while (
+        while (poller.poll(3000) != -1){
+
+        }
 
 
 
