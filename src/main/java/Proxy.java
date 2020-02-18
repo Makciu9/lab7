@@ -46,6 +46,7 @@ public class Proxy {
                 String command = messageSplit[0];
 
                 if (command.equals("INIT")) {
+                    int start = Integer.parseInt(messageSplit[1]);
                     
                 }
 
