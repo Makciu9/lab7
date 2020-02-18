@@ -49,11 +49,12 @@ public class Proxy {
             if (cache.getStart()  <= key && cache.getEnd() >= key){
                 cache.getFrame().send(socketStorage, ZFrame.REUSE + ZFrame.MORE);
                 recv.send(socketStorage, false);
-                
+                flag = true;
 
             }
 
         }
+        
     }
 
 
