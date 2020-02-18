@@ -28,4 +28,7 @@ public class Cache {
     public ZFrame getFrame() {
         return frame;
     }
+
+    public boolean checkID(String id) {
+    }
 }
