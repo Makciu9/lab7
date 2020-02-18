@@ -1,7 +1,4 @@
-import org.zeromq.SocketType;
-import org.zeromq.ZContext;
-import org.zeromq.ZFrame;
-import org.zeromq.ZMQ;
+import org.zeromq.*;
 
 import java.util.Scanner;
 
@@ -27,6 +24,7 @@ public class Storage {
         while (poller.poll(3000) != -1){
             isTimeout(socket);
             if (poller.pollin(0)){
+                ZMsg recv = ZMsg.recvMsg(socket);
 
             }
 
