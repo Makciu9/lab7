@@ -24,4 +24,7 @@ public class Cache {
     public int getEnd() {
         return end;
     }
+
+    public ZFrame getFrame() {
+    }
 }
