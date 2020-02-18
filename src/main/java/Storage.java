@@ -29,7 +29,8 @@ public class Storage {
                     String[] message = recv.getLast().toString().split(" ");
                     String command = message[0];
                     if (command.equals("GET")){
-                        
+                        int key = Integer.parseInt(message[1]);
+
                     }
                 }
 
