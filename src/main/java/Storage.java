@@ -22,6 +22,8 @@ public class Storage {
         poller = context.createPoller(1);
         poller.register(socket, ZMQ.Poller.POLLIN);
 
+        timeout = System.currentTimeMillis()
+
 
 
 
