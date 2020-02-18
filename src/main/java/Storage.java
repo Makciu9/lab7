@@ -34,6 +34,9 @@ public class Storage {
 
     }
     private static void isTimeout(ZMQ.Socket socket) {
-        
+        if (System.currentTimeMillis() >= timeout){
+            
+        }
+
     }
 }
