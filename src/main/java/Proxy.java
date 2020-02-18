@@ -49,7 +49,7 @@ public class Proxy {
     private static void sendGET(int key, ZMsg recv) {
         boolean flag = false;
         for (Cache cache : caches) {
-            if (cache.getStart()
+            if (cache.getStart()  <= key && cache.getEnd() >= key)
 
         }
     }

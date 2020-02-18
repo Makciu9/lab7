@@ -20,4 +20,7 @@ public class Cache {
         return start;
 
     }
+
+    public int getEnd() {
+    }
 }
