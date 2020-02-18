@@ -48,6 +48,8 @@ public class Proxy {
         for (Cache cache : caches) {
             if (cache.getStart()  <= key && cache.getEnd() >= key){
                 cache.getFrame().send(socketStorage, ZFrame.REUSE + ZFrame.MORE);
+                recv.send(socketStorage, false);
+                
 
             }
 
