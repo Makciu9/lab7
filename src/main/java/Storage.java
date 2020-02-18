@@ -28,6 +28,7 @@ public class Storage {
                 if (recv.size() == 3) {
                     String[] message = recv.getLast().toString().split(" ");
                     String command = message[0];
+                    if (command.equals(
                 }
 
             }
