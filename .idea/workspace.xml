@@ -47,7 +47,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Console_client">
+  <component name="RunManager" selected="Application.Proxy">
     <configuration name="Console_client" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Console_client" />
       <module name="lab7" />
