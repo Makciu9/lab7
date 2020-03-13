@@ -11,6 +11,7 @@ public class Storage {
     public static void main(String[] args) {
         context = new ZContext();
         ZMQ.Socket socket = context.createSocket(SocketType.DEALER);
+        ZMQ.Socket socket = ;
         Scanner in = new Scanner(System.in);
         int start = in.nextInt();
         int end = in.nextInt();
