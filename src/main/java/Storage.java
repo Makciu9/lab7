@@ -1,5 +1,6 @@
 import org.zeromq.*;
 
+import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
@@ -12,6 +13,7 @@ public class Storage {
         context = new ZContext();
         ZMQ.Socket socket = context.createSocket(SocketType.DEALER);
         socket.connect("tcp://localhost:3586");
+        storage = new HashMap<>();
         Scanner in = new Scanner(System.in);
         int start = in.nextInt();
         int end = in.nextInt();
