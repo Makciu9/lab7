@@ -22,7 +22,7 @@ public class Proxy {
         poller.register(socketClient, ZMQ.Poller.POLLIN);
         poller.register(socketStorage, ZMQ.Poller.POLLIN);
 
-        //caches = new ArrayList<>();
+        caches = new ArrayList<>();
         while (poller.poll(3000) != -1) {
             if (poller.pollin(0)){
                 ZMsg recv = ZMsg.recvMsg(socketClient);
