@@ -45,6 +45,15 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="Storage" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Storage" />
+      <module name="lab7" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
