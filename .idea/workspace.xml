@@ -46,8 +46,8 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="Storage" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="Storage" />
+    <configuration name="Proxy" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Proxy" />
       <module name="lab7" />
       <method v="2">
         <option name="Make" enabled="true" />
