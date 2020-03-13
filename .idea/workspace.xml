@@ -47,7 +47,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Console_client">
+  <component name="RunManager" selected="Application.Storage">
     <configuration name="Console_client" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Console_client" />
       <module name="lab7" />
@@ -62,9 +62,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Storage" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Storage" />
+      <module name="lab7" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.Proxy" />
       <item itemvalue="Application.Console_client" />
+      <item itemvalue="Application.Storage" />
     </list>
   </component>
   <component name="SvnConfiguration">
