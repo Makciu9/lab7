@@ -6,7 +6,7 @@ public class Console_client {
 
     private static ZMQ.Socket socket;
     public static void main(String[] args) {
-        String port = args[0];
+        //String port = args[0];
         ZContext context = new ZContext();
         socket = context.createSocket(SocketType.REQ);
         socket.connect("tcp://localhost:3585");
