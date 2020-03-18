@@ -30,9 +30,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Client ">
-    <configuration name="Client " type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="Console_client" />
+  <component name="RunManager" selected="Application.Proxy">
+    <configuration name="Proxy" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Proxy" />
       <module name="lab7" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -54,7 +54,7 @@
     </configuration>
     <list>
       <item itemvalue="Application.Stroge" />
-      <item itemvalue="Application.Client " />
+      <item itemvalue="Application.Proxy" />
     </list>
   </component>
   <component name="SvnConfiguration">
