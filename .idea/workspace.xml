@@ -28,6 +28,22 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="Stroge" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Storage" />
+      <module name="lab7" />
+      <option name="PROGRAM_PARAMETERS" value="0 100" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Storage" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
