@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="27fb1bcf-1862-462f-bb2e-4bd7a9961243" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Console_client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Console_client.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,7 +30,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Client">
+  <component name="RunManager" selected="Application.Storage2">
     <configuration name="Client" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Console_client" />
       <module name="lab7" />
@@ -40,6 +40,13 @@
     </configuration>
     <configuration name="Proxy" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Proxy" />
+      <module name="lab7" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Storage2" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Storage" />
       <module name="lab7" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -61,6 +68,7 @@
     </configuration>
     <list>
       <item itemvalue="Application.Stroge" />
+      <item itemvalue="Application.Storage2" />
       <item itemvalue="Application.Proxy" />
       <item itemvalue="Application.Client" />
     </list>
