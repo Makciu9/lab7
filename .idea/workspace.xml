@@ -30,7 +30,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Stroge">
+  <component name="RunManager" selected="Application.Proxy">
     <configuration name="Proxy" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Proxy" />
       <module name="lab7" />
