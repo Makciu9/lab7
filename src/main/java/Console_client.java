@@ -6,10 +6,11 @@ public class Console_client {
 
     private static ZMQ.Socket socket;
     public static void main(String[] args) {
+        String port = args[0];
         ZContext context = new ZContext();
         socket = context.createSocket(SocketType.REQ);
-        socket.connect("tcp://localhost:3585");
-        System.out.println("Client start on tcp://localhost:3585");
+        socket.connect("tcp://localhost:" + port);
+        System.out.println("Client start on tcp://localhost:"+ port);
         Scanner in = new Scanner(System.in);
 
         while (true) {
