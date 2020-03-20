@@ -41,6 +41,7 @@ public class Proxy {
                 ZMsg recv = ZMsg.recvMsg(socketStorage);
                 ZFrame frame = recv.unwrap();
                 String id = new String(frame.getData(), ZMQ.CHARSET);
+                System.out.println(id);
                 String message = new String(recv.getFirst().getData(), ZMQ.CHARSET);
                 String[] messageSplit = message.split(" ");
                 String command = messageSplit[0];
