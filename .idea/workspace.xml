@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="decb81af-a2e5-4a43-9a5a-269b1fa6ab1b" name="Default Changelist" comment="" />
+    <list default="true" id="decb81af-a2e5-4a43-9a5a-269b1fa6ab1b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +29,35 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager" selected="Application.C">
+    <configuration name="C" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Console_client" />
+      <module name="lab7" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="p" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Proxy" />
+      <module name="lab7" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="s" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Storage" />
+      <module name="lab7" />
+      <option name="PROGRAM_PARAMETERS" value="0 100" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.s" />
+      <item itemvalue="Application.p" />
+      <item itemvalue="Application.C" />
+    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
