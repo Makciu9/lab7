@@ -15,10 +15,11 @@ public class Storage {
         socket.connect("tcp://localhost:3586");
         storage = new HashMap<>();
         Scanner in = new Scanner(System.in);
+        
         int start = in.nextInt();
         int end = in.nextInt();
-
         ZFrame initFrame = new ZFrame("INIT" + " " + start + " " + end);
+
         initFrame.send(socket, 0);
         System.out.println("Storage start on tcp://localhost:3586");
 
