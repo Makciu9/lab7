@@ -30,7 +30,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.S">
+  <component name="RunManager" selected="Application.C">
     <configuration name="C" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Console_client" />
       <module name="lab7" />
