@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f3ce5020-a71d-45b9-a07f-a815fc4f9e10" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/Proxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proxy.java" afterDir="false" />
-    </list>
+    <list default="true" id="f3ce5020-a71d-45b9-a07f-a815fc4f9e10" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +27,21 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="C" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Console_client" />
+      <module name="lab7" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Console_client" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SvnConfiguration">
     <configuration />
