@@ -10,9 +10,11 @@ public class Storage {
     private static long timeout;
     private static Map<Integer, String> storage;
     public static void main(String[] args) {
+
         context = new ZContext();
         ZMQ.Socket socket = context.createSocket(SocketType.DEALER);
         socket.connect("tcp://localhost:3586");
+        //слушаем сокет и отправляем ноти
         storage = new HashMap<>();
         Scanner in = new Scanner(System.in);
         
