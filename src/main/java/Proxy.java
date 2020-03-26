@@ -11,7 +11,9 @@ public class Proxy {
 
     public static void main(String[] args) {
         initContextSockets();
+        //открываем два сокета, один для клиета, от другого команды нотифи
         initPoller();
+        //клиет 0, хранилища 1
 
         caches = new ArrayList<>();
         while (poller.poll(3000) != -1) {
@@ -26,11 +28,14 @@ public class Proxy {
                 if (command.equals("GET")){
                     int key = Integer.parseInt(messageSplit[1]);
                     sendGET(key, recv);
+                    //Случайному серверу содер данные
                 } else if (command.equals("PUT")){
                     int key = Integer.parseInt(messageSplit[1]);
                     sendPUT(key, recv);
+                    //Серверу и он обновляет данные
                 }
             } else if (poller.pollin(1)){
+                //список подключеных серваков
                 ZMsg recv = ZMsg.recvMsg(socketStorage);
                 ZFrame frame = recv.unwrap();
                 String id = new String(frame.getData(), ZMQ.CHARSET);
