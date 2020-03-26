@@ -1,20 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ChangeListManager">
-    <list default="true" id="decb81af-a2e5-4a43-9a5a-269b1fa6ab1b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Storage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Storage.java" afterDir="false" />
-    </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="SHOW_DIALOG" value="false" />
-    <option name="HIGHLIGHT_CONFLICTS" value="true" />
-    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
-    <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectId" id="1ZPVmdbr6U8TCIpxlQwIREoQE6w" />
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
@@ -31,57 +16,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.s">
-    <configuration name="C" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="Console_client" />
-      <module name="lab7" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="p" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="Proxy" />
-      <module name="lab7" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="s" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="Storage" />
-      <module name="lab7" />
-      <option name="PROGRAM_PARAMETERS" value="0 100" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="Application.s" />
-      <item itemvalue="Application.p" />
-      <item itemvalue="Application.C" />
-    </list>
-  </component>
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
-  <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="decb81af-a2e5-4a43-9a5a-269b1fa6ab1b" name="Default Changelist" comment="" />
-      <created>1584740875938</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1584740875938</updated>
-    </task>
-    <servers />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
   </component>
 </project>
