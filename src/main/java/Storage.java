@@ -14,21 +14,13 @@ public class Storage {
         context = new ZContext();
         ZMQ.Socket socket = context.createSocket(SocketType.DEALER);
         socket.connect("tcp://localhost:3586");
-        //слушаем сокет и отправляем ноти
-        storage = new HashMap<>();
-        Scanner in = new Scanner(System.in);
-        
-        int start = in.nextInt();
-        int end = in.nextInt();
-        ZFrame initFrame = new ZFrame("INIT" + " " + start + " " + end);
-
-        initFrame.send(socket, 0);
-        System.out.println("Storage start on tcp://localhost:3586");
-
-        poller = context.createPoller(1);
-        poller.register(socket, ZMQ.Poller.POLLIN);
+        //слушаем сокет
+        initStorage();
+        sendInitFrame(socket);
+        initPoller(socket);
 
         timeout = System.currentTimeMillis() + 3000;
+
         while (poller.poll(3000) != -1){
             isTimeout(socket);
             if (poller.pollin(0)){
@@ -52,9 +44,26 @@ public class Storage {
         }
         context.destroySocket(socket);
         context.destroy();
+    }
 
+    private static void initPoller(ZMQ.Socket socket) {
+        poller = context.createPoller(1);
+        poller.register(socket, ZMQ.Poller.POLLIN);
+    }
 
+    private static void sendInitFrame(ZMQ.Socket socket) {
+        Scanner in = new Scanner(System.in);
 
+        int start = in.nextInt();
+        int end = in.nextInt();
+        ZFrame initFrame = new ZFrame("INIT" + " " + start + " " + end);
+
+        initFrame.send(socket, 0);
+        System.out.println("Storage start on tcp://localhost:3586");
+    }
+
+    private static void initStorage() {
+        storage = new HashMap<>();
     }
 
     private static void sendGET(int key, ZMsg recv, ZMQ.Socket socket) {
