@@ -84,7 +84,6 @@ public class Proxy {
                 flag = true;
 
             }
-
         }
         if (!flag) {
             recv.getLast().reset("er");
@@ -105,6 +104,7 @@ public class Proxy {
         ZMsg response = new ZMsg();
         response.add(new ZFrame("put to " + count));
         response.wrap(recv.getFirst());
+        // отпрака клиету
         response.send(socketClient);
     }
     private static void changeTimeout(String id) {
