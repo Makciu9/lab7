@@ -9,6 +9,7 @@ public class Proxy {
     private static ZContext context;
     private static ZMQ.Poller poller;
     private static ArrayList<Cache> caches;
+    
 
     public static void main(String[] args) {
         initContextSockets();
@@ -40,7 +41,6 @@ public class Proxy {
                 String tmp = recv.getLast().toString();
                 Parse_cmd cmd = new Parse_cmd(tmp);
                 System.out.println(id);
-
 
                 if (cmd.getType().equals("INIT")) {
                     int start = cmd.getStart();
