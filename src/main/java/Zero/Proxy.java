@@ -21,14 +21,14 @@ public class Proxy {
             if (poller.pollin(0)){
                 ZMsg recv = ZMsg.recvMsg(socketClient);
                 Parse_cmd cmd = new Parse_cmd(recv.getLast().toString());
-                System.out.println(messageSplit[0] + " " + messageSplit[1]);
+                System.out.println(cmd.getType());
 
                 if (cmd.getType().equals("GET")){
                     int key = cmd.getInd();
                     sendGET(key, recv);
                     //Случайному серверу содер данные
-                } else if (command.equals("PUT")){
-                    int key = Integer.parseInt(messageSplit[1]);
+                } else if (cmd.getType().equals("PUT")){
+                    int key = cmd.getInd();
                     sendPUT(key, recv);
                     //Серверу и он обновляет данные
                 }
