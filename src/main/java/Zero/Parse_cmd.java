@@ -28,5 +28,7 @@ public class Parse_cmd {
             tmp.add(Integer.parseInt(split[2]));
         }
     }
-    
+    public String getType(){
+        return type.name();
+    }
 }
