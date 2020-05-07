@@ -68,8 +68,8 @@ public class Storage {
     }
 
     private static void sendGET(int key, ZMsg recv, ZMQ.Socket socket) {
-        String response = storage.getOrDefault(key, "ex");
-        recv.getLast().reset(response);
+        Integer response = storage.getOrDefault(key, -1);
+        recv.getLast().reset(String.valueOf(response));
         recv.send(socket);
         System.out.println("GET | key: " + key);
     }
