@@ -9,7 +9,7 @@ public class Storage {
     private static ZContext context;
     private static ZMQ.Poller poller;
     private static long timeout;
-    private static Map<Integer, String> storage;
+    private static Map<Integer, Integer> storage;
     public static void main(String[] args) {
 
         context = new ZContext();
@@ -27,14 +27,14 @@ public class Storage {
             if (poller.pollin(0)){
                 ZMsg recv = ZMsg.recvMsg(socket);
                 if (recv.size() == 3) {
-                    String[] message = recv.getLast().toString().split(" ");
-                    String command = message[0];
-                    if (command.equals("GET")){
-                        int key = Integer.parseInt(message[1]);
+                    String tmp = recv.getLast().toString();
+                    Parse_cmd cmd = new Parse_cmd(tmp);
+                    if (cmd.getType().equals("GET")){
+                        int key = cmd.getInd();
                         sendGET(key, recv, socket);
-                    } else if (command.equals("PUT")){
-                        int key = Integer.parseInt(message[1]);
-                        String val = message[2];
+                    } else if (cmd.getType().equals("PUT")){
+                        int key = cmd.getInd();
+                        int val = cmd.getVal();
                         sendPUT(key, val, recv);
 
                     }
@@ -74,7 +74,7 @@ public class Storage {
         System.out.println("GET | key: " + key);
     }
 
-    private static void sendPUT(int key, String val, ZMsg recv) {
+    private static void sendPUT(int key, int val, ZMsg recv) {
         storage.put(key, val);
         recv.destroy();
         System.out.println("PUT | key: " + key + " | val: " + val);
