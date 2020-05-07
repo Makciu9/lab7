@@ -9,7 +9,8 @@ public class Proxy {
     private static ZContext context;
     private static ZMQ.Poller poller;
     private static ArrayList<Cache> caches;
-    
+    private static Integer client = 0;
+    private static Integer server = 1;
 
     public static void main(String[] args) {
         initContextSockets();
@@ -19,7 +20,7 @@ public class Proxy {
 
         caches = new ArrayList<>();
         while (poller.poll(3000) != -1) {
-            if (poller.pollin(0)){
+            if (poller.pollin(client)){
                 ZMsg recv = ZMsg.recvMsg(socketClient);
                 Parse_cmd cmd = new Parse_cmd(recv.getLast().toString());
                 System.out.println(cmd.getType());
@@ -33,7 +34,7 @@ public class Proxy {
                     sendPUT(key, recv);
                     //Серверу и он обновляет данные
                 }
-            } else if (poller.pollin(1)){
+            } else if (poller.pollin(server)){
                 //список подключеных серваков
                 ZMsg recv = ZMsg.recvMsg(socketStorage);
                 ZFrame frame = recv.unwrap();
