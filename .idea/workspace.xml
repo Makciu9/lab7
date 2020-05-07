@@ -37,7 +37,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.P">
+  <component name="RunManager" selected="Application.Storage">
     <configuration name="C" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Console_client" />
       <module name="lab7" />
@@ -66,6 +66,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Storage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Zero.Storage" />
+      <module name="lab7" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Zero.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Console_client" />
       <method v="2">
@@ -77,7 +90,13 @@
       <item itemvalue="Application.P" />
       <item itemvalue="Application.S" />
       <item itemvalue="Application.C2" />
+      <item itemvalue="Application.Storage" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Storage" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
