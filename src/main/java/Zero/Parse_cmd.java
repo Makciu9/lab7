@@ -30,8 +30,12 @@ public class Parse_cmd {
             tmp.add(Integer.parseInt(split[2]));
         }
         if(split[0].equals("INIT")){
+            this.type=Type.INIT;
             tmp.add(Integer.parseInt(split[1]));
             tmp.add(Integer.parseInt(split[2]));
+        }
+        if(split[0].equals("TIMEOUT")){
+            this.type=Type.TIMEOUT;
         }
     }
     public String getType(){
