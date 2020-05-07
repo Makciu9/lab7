@@ -10,11 +10,13 @@ public class Storage {
     private static ZMQ.Poller poller;
     private static long timeout;
     private static Map<Integer, Integer> storage;
+    private static String server_add = "tcp://localhost:3586";
+    private static String time = "TIMEOUT";
     public static void main(String[] args) {
 
         context = new ZContext();
         ZMQ.Socket socket = context.createSocket(SocketType.DEALER);
-        socket.connect("tcp://localhost:3586");
+        socket.connect(server_add);
         //слушаем сокет
         initStorage();
         sendInitFrame(socket);
@@ -84,7 +86,7 @@ public class Storage {
         if (System.currentTimeMillis() >= timeout) {
             System.out.println("TIMEOUT");
             timeout = System.currentTimeMillis() + 3000;
-            ZFrame frame = new ZFrame("TIMEOUT");
+            ZFrame frame = new ZFrame(time);
             frame.send(socket, 0);
         }
 

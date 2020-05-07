@@ -15,7 +15,8 @@ public class Proxy {
     private static String server_add = "tcp://localhost:3586";
     private static String get = "GET";
     private static String put = "PUT";
-    private static String noti = "INIT";
+    private static String notif = "INIT";
+    private static String time = "TIMEOUT";
 
     public static void main(String[] args) {
         initContextSockets();
@@ -48,11 +49,11 @@ public class Proxy {
                 Parse_cmd cmd = new Parse_cmd(tmp);
                 System.out.println(id);
 
-                if (cmd.getType().equals("INIT")) {
+                if (cmd.getType().equals(notif)) {
                     int start = cmd.getStart();
                     int end = cmd.getEnd();
                     caches.add(new Cache(frame, id, System.currentTimeMillis(), start, end));
-                }else if (cmd.getType().equals("TIMEOUT")){
+                }else if (cmd.getType().equals(time)){
                     changeTimeout(id);
                 } else {recv.send(socketClient);} //отправка клиету
             }
