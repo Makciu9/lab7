@@ -11,6 +11,11 @@ public class Proxy {
     private static ArrayList<Cache> caches;
     private static Integer client = 0;
     private static Integer server = 1;
+    private static String client_add = "tcp://localhost:3585";
+    private static String server_add = "tcp://localhost:3586";
+    private static String get = "GET";
+    private static String put = "PUT";
+    private static String noti = "INIT";
 
     public static void main(String[] args) {
         initContextSockets();
@@ -25,11 +30,11 @@ public class Proxy {
                 Parse_cmd cmd = new Parse_cmd(recv.getLast().toString());
                 System.out.println(cmd.getType());
 
-                if (cmd.getType().equals("GET")){
+                if (cmd.getType().equals(get)){
                     int key = cmd.getInd();
                     sendGET(key, recv);
                     //Случайному серверу содер данные
-                } else if (cmd.getType().equals("PUT")){
+                } else if (cmd.getType().equals(put)){
                     int key = cmd.getInd();
                     sendPUT(key, recv);
                     //Серверу и он обновляет данные
@@ -67,10 +72,10 @@ public class Proxy {
     private static void initContextSockets() {
         context = new ZContext();
         socketClient = context.createSocket(SocketType.ROUTER);
-        socketClient.bind("tcp://localhost:3585");
+        socketClient.bind(client_add);
 
         socketStorage = context.createSocket(SocketType.ROUTER);
-        socketStorage.bind("tcp://localhost:3586");
+        socketStorage.bind(server_add);
         System.out.println("Proxy start");
     }
 
