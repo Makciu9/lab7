@@ -41,4 +41,11 @@ public class Parse_cmd {
     public Integer getVal(){
         return tmp.get(1);
     }
+
+    public Integer getStart(){
+        return tmp.get(0);
+    }
+    public Integer getEnd(){
+        return tmp.get(1);
+    }
 }
