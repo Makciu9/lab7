@@ -4,6 +4,8 @@ import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class Parse_cmd {
+    public int getInd;
+
     enum Type{
         GET, PUT, INIT, TIMEOUT,
     }

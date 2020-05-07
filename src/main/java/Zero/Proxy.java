@@ -23,8 +23,8 @@ public class Proxy {
                 Parse_cmd cmd = new Parse_cmd(recv.getLast().toString());
                 System.out.println(messageSplit[0] + " " + messageSplit[1]);
 
-                if (cmd.equals("GET")){
-                    int key = Integer.parseInt(messageSplit[1]);
+                if (cmd.getType().equals("GET")){
+                    int key = cmd.getInd;
                     sendGET(key, recv);
                     //Случайному серверу содер данные
                 } else if (command.equals("PUT")){
