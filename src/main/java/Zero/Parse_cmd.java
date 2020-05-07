@@ -29,6 +29,10 @@ public class Parse_cmd {
             tmp.add(Integer.parseInt(split[1]));
             tmp.add(Integer.parseInt(split[2]));
         }
+        if(split[0].equals("INIT")){
+            tmp.add(Integer.parseInt(split[1]));
+            tmp.add(Integer.parseInt(split[2]));
+        }
     }
     public String getType(){
         return type.name();
