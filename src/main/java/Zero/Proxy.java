@@ -37,16 +37,16 @@ public class Proxy {
                 ZMsg recv = ZMsg.recvMsg(socketStorage);
                 ZFrame frame = recv.unwrap();
                 String id = new String(frame.getData(), ZMQ.CHARSET);
+                String tmp = recv.getLast().toString();
+                Parse_cmd cmd = new Parse_cmd(tmp);
                 System.out.println(id);
-                String message = new String(recv.getFirst().getData(), ZMQ.CHARSET);
-                String[] messageSplit = message.split(" ");
-                String command = messageSplit[0];
 
-                if (command.equals("INIT")) {
-                    int start = Integer.parseInt(messageSplit[1]);
-                    int end = Integer.parseInt(messageSplit[2]);
+
+                if (cmd.getType().equals("INIT")) {
+                    int start = cmd.getStart();
+                    int end = cmd.getEnd();
                     caches.add(new Cache(frame, id, System.currentTimeMillis(), start, end));
-                }else if (command.equals("TIMEOUT")){
+                }else if (cmd.getType().equals("TIMEOUT")){
                     changeTimeout(id);
                 } else {recv.send(socketClient);} //отправка клиету
             }
