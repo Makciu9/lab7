@@ -4,7 +4,7 @@ import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class Parse_cmd {
-    public int getInd;
+
 
     enum Type{
         GET, PUT, INIT, TIMEOUT,
@@ -32,5 +32,13 @@ public class Parse_cmd {
     }
     public String getType(){
         return type.name();
+    }
+
+    public Integer getInd(){
+        return tmp.get(0);
+    }
+
+    public Integer getVal(){
+        return tmp.get(1);
     }
 }

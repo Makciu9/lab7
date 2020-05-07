@@ -24,7 +24,7 @@ public class Proxy {
                 System.out.println(messageSplit[0] + " " + messageSplit[1]);
 
                 if (cmd.getType().equals("GET")){
-                    int key = cmd.getInd;
+                    int key = cmd.getInd();
                     sendGET(key, recv);
                     //Случайному серверу содер данные
                 } else if (command.equals("PUT")){
