@@ -20,10 +20,7 @@ public class Proxy {
         while (poller.poll(3000) != -1) {
             if (poller.pollin(0)){
                 ZMsg recv = ZMsg.recvMsg(socketClient);
-                String message = new String(recv.getLast().getData(), ZMQ.CHARSET);
-                String[] messageSplit = message.split(" ");
-                String command = messageSplit[0];
-
+                Parse_cmd cmd = new Parse_cmd(recv.getLast().toString());
                 System.out.println(messageSplit[0] + " " + messageSplit[1]);
 
                 if (command.equals("GET")){

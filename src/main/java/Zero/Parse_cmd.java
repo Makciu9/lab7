@@ -28,4 +28,5 @@ public class Parse_cmd {
             tmp.add(Integer.parseInt(split[2]));
         }
     }
+    
 }
